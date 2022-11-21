@@ -1,0 +1,24 @@
+@host =http://localhost:5210
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzOTRjNjQ3MC05MTgzLTQwNGYtOWMzYi0xYjIyZGQ2ZGE1YWQiLCJqdGkiOiI0NjUzYWE3ZC04MjRlLTRhN2ItYTBiOS05YzQ1ODAzZGFhMGMiLCJnaXZlbl9uYW1lIjoiVGVzdCIsImZhbWlseV9uYW1lIjoiVGVzdCIsImV4cCI6MTY2OTA1MjYwOSwiaXNzIjoiTXlSZXN0YXVyYW50IiwiYXVkIjoiTXlSZXN0YXVyYW50In0.0ut5nB_3zLKsbJE3YnAsJWPsdTop1C6sRhcybLu7Py8
+@userId=abcd
+
+POST {{host}}/users/{{userId}}/restaurants
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name": "Test",
+    "description": "Test",
+    "Sections": [
+        {
+            "name": "Test",
+            "description": "Test",
+            "Items": [
+                {
+                    "name": "Test",
+                    "description": "Test"
+                }
+            ]
+        }
+    ]
+}

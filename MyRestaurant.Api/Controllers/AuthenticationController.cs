@@ -1,5 +1,6 @@
 using MapsterMapper;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MyRestaurant.Application.Authentication.Commands.Register;
 using MyRestaurant.Application.Authentication.Queries.Login;
@@ -7,8 +8,8 @@ using MyRestaurant.Contracts.Authentication;
 
 namespace MyRestaurant.Api.Controllers;
 
-[ApiController]
 [Route("auth")]
+[AllowAnonymous]
 public class AuthenticationController : ApiController
 {
     private readonly ISender _mediator;

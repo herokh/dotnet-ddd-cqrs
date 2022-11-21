@@ -13,6 +13,8 @@
 
   <ItemGroup>
     <PackageReference Include="erroror" Version="1.2.0" />
+    <PackageReference Include="FluentValidation" Version="11.3.0" />
+    <PackageReference Include="FluentValidation.aspnetcore" Version="11.2.2" />
     <PackageReference Include="mediatr" Version="11.1.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
